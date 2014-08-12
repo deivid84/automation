@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Time in HomePage is: 2013-10-10T14:37:14+00:00<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Entering PostPage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Time in PostPage is: 2013-10-10T14:37:14+00:00<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Submitting data<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Submitting incorrect data<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<strong style="color:red;">name: </strong><br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Submitting correct data<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Going to last month with posts<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Going to first day with posts<br/>]]>
+    </line>
+    <line>
+      <![CDATA[There are: 2 posts<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Title of post 0 is: It is used for:<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Title of post 1 is: What software testing is<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+    <line>
+      <![CDATA[Entering Homepage<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Executing search for: Software<br/>]]>
+    </line>
+    <line>
+      <![CDATA[Exit]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55167" started-at="2014-07-18T12:35:05Z" finished-at="2014-07-18T12:36:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55167" started-at="2014-07-18T12:35:05Z" finished-at="2014-07-18T12:36:00Z">
+      <class name="com.globant.training.david_goldes.tests.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3955" started-at="2014-07-18T09:35:05Z" finished-at="2014-07-18T09:35:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="checkDateTime()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="checkDateTime" duration-ms="4082" started-at="2014-07-18T09:35:09Z" finished-at="2014-07-18T09:35:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Time in HomePage is: 2013-10-10T14:37:14+00:00<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Entering PostPage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Time in PostPage is: 2013-10-10T14:37:14+00:00<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkDateTime -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="250" started-at="2014-07-18T09:35:13Z" finished-at="2014-07-18T09:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3066" started-at="2014-07-18T09:35:13Z" finished-at="2014-07-18T09:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="checkTitle()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="checkTitle" duration-ms="2095" started-at="2014-07-18T09:35:16Z" finished-at="2014-07-18T09:35:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="301" started-at="2014-07-18T09:35:18Z" finished-at="2014-07-18T09:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3423" started-at="2014-07-18T09:35:18Z" finished-at="2014-07-18T09:35:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="contactUs()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="contactUs" duration-ms="7157" started-at="2014-07-18T09:35:22Z" finished-at="2014-07-18T09:35:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Submitting data<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="274" started-at="2014-07-18T09:35:29Z" finished-at="2014-07-18T09:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3562" started-at="2014-07-18T09:35:29Z" finished-at="2014-07-18T09:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="contactUsWithFail()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="contactUsWithFail" duration-ms="9494" started-at="2014-07-18T09:35:33Z" finished-at="2014-07-18T09:35:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Submitting incorrect data<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<strong style="color:red;">name: </strong><br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Submitting correct data<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- contactUsWithFail -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="321" started-at="2014-07-18T09:35:42Z" finished-at="2014-07-18T09:35:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3400" started-at="2014-07-18T09:35:43Z" finished-at="2014-07-18T09:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="countPosts()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="countPosts" duration-ms="5810" started-at="2014-07-18T09:35:46Z" finished-at="2014-07-18T09:35:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Going to last month with posts<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Going to first day with posts<br/>]]>
+            </line>
+            <line>
+              <![CDATA[There are: 2 posts<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Title of post 0 is: It is used for:<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Title of post 1 is: What software testing is<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- countPosts -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="253" started-at="2014-07-18T09:35:52Z" finished-at="2014-07-18T09:35:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="before" is-config="true" duration-ms="3575" started-at="2014-07-18T09:35:52Z" finished-at="2014-07-18T09:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="doSearch()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="doSearch" duration-ms="3874" started-at="2014-07-18T09:35:56Z" finished-at="2014-07-18T09:35:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering Homepage<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Executing search for: Software<br/>]]>
+            </line>
+            <line>
+              <![CDATA[Exit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.david_goldes.tests.Tests@4d0e7233]" name="after" is-config="true" duration-ms="257" started-at="2014-07-18T09:35:59Z" finished-at="2014-07-18T09:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.david_goldes.tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

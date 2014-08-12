@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 18 09:35:05 ART 2014</td>
+</tr>
+<tr><td>Total time:</td><td>55 seconds (55167 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.checkDateTime()'><b>checkDateTime</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-1561159784" onClick='toggleBox("Output-1561159784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1561159784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1561159784">
+Entering Homepage<br/><br/>
+Time in HomePage is: 2013-10-10T14:37:14+00:00<br/><br/>
+Entering PostPage<br/><br/>
+Time in PostPage is: 2013-10-10T14:37:14+00:00<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.checkTitle()'><b>checkTitle</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-645559631" onClick='toggleBox("Output-645559631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-645559631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-645559631">
+Entering Homepage<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.contactUs()'><b>contactUs</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-779885588" onClick='toggleBox("Output-779885588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-779885588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-779885588">
+Entering Homepage<br/><br/>
+Submitting data<br/><br/>
+<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.contactUsWithFail()'><b>contactUsWithFail</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-1947577" onClick='toggleBox("Output-1947577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1947577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1947577">
+Entering Homepage<br/><br/>
+Submitting incorrect data<br/><br/>
+<strong style="color:red;">name: </strong><br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/><br/>
+Submitting correct data<br/><br/>
+<strong style="color:red;">name: </strong>David<br/><b style="color:red;">email: </b>david@test.com<br/><strong style="color:red;">subject: </strong>test subject<br/><strong style="color:red;">message: </strong>test message<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.countPosts()'><b>countPosts</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-1554127743" onClick='toggleBox("Output-1554127743", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1554127743" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1554127743">
+Entering Homepage<br/><br/>
+Going to last month with posts<br/><br/>
+Going to first day with posts<br/><br/>
+There are: 2 posts<br/><br/>
+Title of post 0 is: It is used for:<br/><br/>
+Title of post 1 is: What software testing is<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+<tr>
+<td title='com.globant.training.david_goldes.tests.Tests.doSearch()'><b>doSearch</b><br>Test class: com.globant.training.david_goldes.tests.Tests<br/>
+<a href="#Output-754125325" onClick='toggleBox("Output-754125325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-754125325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-754125325">
+Entering Homepage<br/><br/>
+Executing search for: Software<br/><br/>
+Exit<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.globant.training.david_goldes.tests.Tests@4d0e7233</td></tr>
+</table><p>
+</body>
+</html>
