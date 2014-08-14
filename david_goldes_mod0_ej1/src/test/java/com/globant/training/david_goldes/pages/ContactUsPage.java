@@ -27,53 +27,27 @@ public class ContactUsPage extends MasterPage {
 		super(driver);
 	}
 
-	public void setName(String name) {
-		nameInput.sendKeys(name);
-	}
-
-	public void setEmail(String email) {
-		emailInput.sendKeys(email);
-	}
-
-	public void setSubject(String subject) {
-		subjectInput.sendKeys(subject);
-	}
-
-	public void setMessaage(String message) {
-		messageInput.sendKeys(message);
-	}
-
 	public void clickSubmit() {
 		submitButton.click();
 	}
-
-	// fills the corresponding textboxes
+	
 	public void fillContactData(String name, String email, String subject,
 			String message) {
-		setName(name);
-		setEmail(email);
-		setSubject(subject);
-		setMessaage(message);		
+		nameInput.sendKeys(name);	
+		emailInput.sendKeys(email);
+		subjectInput.sendKeys(subject);
+		messageInput.sendKeys(message);
 	}
 
 	
 	public boolean sentSuccesfully() {
-		if (driver.findElements(By.id("cntctfrm_thanks")).isEmpty())
-			return false;
-		else
-			return true;
+	    return !driver.findElements(By.id("cntctfrm_thanks")).isEmpty();
 	}
 	
-	//este metodo lo hice para jugar un poco con el reporte, el unico problema es
-	//que el emailable-report queda con todos los tags sin interpretar
-	public String toString(){
-		return "<strong style=\"color:red;\">name: </strong>" + nameInput.getAttribute("value") + "<br/>" + 
-				"<b style=\"color:red;\">email: </b>" + emailInput.getAttribute("value") + "<br/>" +
-				"<strong style=\"color:red;\">subject: </strong>" + subjectInput.getAttribute("value") + "<br/>" +
-				"<strong style=\"color:red;\">message: </strong>" + messageInput.getAttribute("value");
-	}
-	
-	public void waitForLoad(){		
-		  super.waitForLoad(submitButton);
+	//Fijate que solo usas este setter solo cuando testear que algun campo esta incompleto.
+	//Lo que se debe hacer es sacar este metodo al igual que todos los setters del form y
+	//reemplazar el metodo fillContactData con un Builder pattern para llenar los campos
+	public void fillName(String name) {
+	    this.nameInput.sendKeys(name);
 	}
 }

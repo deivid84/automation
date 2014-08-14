@@ -39,6 +39,8 @@ public class HomePage extends MasterPage {
 	}
 
 	public boolean isHomePage() {
+	    //fijate que en la documentacion del metodo getTitle() dice que puede ser null.
+	    //Podrias tener un null pointer exception aca.
 		return driver.getTitle().equals(PAGETITLE);
 	}
 
@@ -52,20 +54,18 @@ public class HomePage extends MasterPage {
 		return dateTime.getAttribute("datetime");
 	}
 
+	//que post estas clickeando ?
 	public PostPage clickPost() {
+	    //que relacion hay entre un date y un post ?
 		dateTime.click();
 		return PageFactory.initElements(driver, PostPage.class);
 	}
 
-	public void waitForLoad() {
-		super.waitForLoad(dateTime);
-	}
-
-	//returns false if there were no posts this month
-	public boolean checkForPostsThisMonth() {
+	public boolean existsPostsForCurrentMonth() {
 		return !(driver.findElements(By.xpath("//*[@id='wp-calendar']/tbody//td/a")).isEmpty());
 	}
 	
+	//los metodos de abajo no son claros en lo que hacen
 	public HomePage goToMonthWithPosts(){
 		prevMonth.click();
 		return PageFactory.initElements(driver, HomePage.class);
