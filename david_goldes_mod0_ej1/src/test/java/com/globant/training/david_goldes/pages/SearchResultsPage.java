@@ -1,13 +1,13 @@
 package com.globant.training.david_goldes.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchResultsPage extends MasterPage {
 	
-	private static final String NOTHINGFOUND = "post-0";	
-	
+    //que article es ? estas hardcodeando el articulo
 	@FindBy(xpath="//*[@id='content']/article[1]")
 	private WebElement article;
 	
@@ -16,10 +16,8 @@ public class SearchResultsPage extends MasterPage {
 	}
 	
 	public boolean foundResults(){
-		return !article.getAttribute("id").equals(NOTHINGFOUND);
-	}
-	
-	public void waitForLoad(){
-		super.waitForLoad(article);
+	    //en estos casos donde tenes que buscar cant de resultados se suele usar algo asi como
+	    return driver.findElements(By.cssSelector("selector")).size() > 0;
+		//return !article.getAttribute("id").equals(NOTHINGFOUND);
 	}
 }
